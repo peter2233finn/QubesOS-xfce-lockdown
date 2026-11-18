@@ -1,0 +1,11 @@
+[Unit]
+Description=LockDown
+
+[Service]
+Type=simple
+ExecStart=bash /path/to/lockdown.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
